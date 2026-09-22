@@ -1,0 +1,29 @@
+﻿@model ShopLivrariaCCC_HenriqueQuito.Models.DTOs.UpdateStatusPedidoModel
+@{
+    ViewData["Title"] = "Alterar Status Pedido";
+    Layout = "AdminLayout";
+}
+
+<h2>Alterar Status do Pedido</h2>
+<a class="my-2 btn btn-primary" asp-action="AllPedidos">Voltar</a>
+
+<form style="width: 50%;" asp-action="AlterarStatusPedido" class="pt-2">
+    <input type="hidden" asp-for="PedidoId" />
+
+    <div class="mb-2">
+        <label>Status do Pedido</label>
+        <select class="form-control" asp-for="StatusPedidoId" asp-items="@Model.StatusPedidoList">
+            <option value="">Selecione o status do pedido</option>
+        </select>
+        <span class="text-danger" asp-validation-for="StatusPedidoId"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Atualizar</button>
+
+    @if (TempData["msg"] != null)
+    {
+        <div class="text-info my-2">
+            @TempData["msg"]
+        </div>
+    }
+</form>

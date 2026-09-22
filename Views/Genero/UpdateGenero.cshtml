@@ -1,0 +1,26 @@
+﻿@model ShopLivrariaCCC_HenriqueQuito.Models.DTOs.GeneroDTO
+}0^
+ViewData["Title"] = "Update Genero";
+Layout = "AdminLayout";
+}
+<h4>GeneroDTO</h4>
+<hr />
+<div style="width:50%">
+    <div class="col-md-4">
+        <form asp-action="UpdateGenero">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="NomeGenero" class="control-label"></label>
+                <input asp-for="NomeGenero" class="form-control" />
+                <span asp-validation-for="NomeGenero" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+<div>
+    <a asp-action="Index">Voltar</a>
+</div>

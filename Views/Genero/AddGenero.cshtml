@@ -1,0 +1,25 @@
+﻿@model ShopLivrariaCCC_HenriqueQuito.Models.DTOs.GeneroDTO
+@{
+    ViewData["Title"] = "Add Genero";
+    Layout = "AdminLayout";
+}
+<h4>AddGenero</h4>
+<hr />
+<div style="width: 50%">
+    <div class="col-md-4">
+        <form asp-action="AddGenero">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="NomeGenero" class="control-label"></label>
+                <input asp-for="NomeGenero" class="form-control" />
+                <span asp-validation-for="NomeGenero" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="AddGenero" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+<div>
+    <a asp-action="Index">Voltar</a>
+</div>

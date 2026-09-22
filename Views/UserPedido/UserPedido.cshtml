@@ -1,0 +1,80 @@
+﻿@using System.Linq
+@model IEnumerable<Pedido>
+@{
+    ViewData["Title"] = "Pedidos do usuário";
+}
+
+<div style="width:100%" class="mt-2">
+    Voltar</a>
+    <h4>Meus pedidos</h4>
+
+    @if (Model != null && Model.Any())
+    {
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Data do Pedido</th>
+                    <th>Status do Pedido</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var pedido in Model)
+                {
+                    <tr>
+                        <td>@pedido.DataCriacao.ToString("dd-MM-yyyy")</td>
+                        <td>@(pedido.StatusPedido != null ? ((StatusPedido)pedido.StatusPedido).NomeStatus : null)</td>
+                    </tr>
+                    @if (pedido.DetalhesPedido is IEnumerable<DetalhePedido> detalhes && detalhes.Any())
+                    {
+                        <tr>
+                            <td colspan="2">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <td colspan="5">
+                                                <strong>Total do Pedido: </strong>
+                                                @(detalhes.Sum(item => item.PrecoUnitario * item.Quantidade).ToString("C"))
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>Livro</th>
+                                            <th>Imagem</th>
+                                            <th>Gênero</th>
+                                            <th>Preço Unitário x Qtd</th>
+                                            <th>Total a Pagar</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach (var item in detalhes)
+                                        {
+                                            <tr>
+                                                <td>@item.Livro?.NomeLivro</td>
+                                                <td>
+                                                    @if (string.IsNullOrEmpty(item.Livro?.Imagem))
+                                                    {
+                                                        <img src="/imagens/NoImage.png" style="width:80px; height:100px" alt="Sem imagem" />
+                                                    }
+                                                    else
+                                                    {
+                                                        <img src="/imagens/@item.Livro.Imagem" style="width:80px; height:100px" alt="@item.Livro.NomeLivro" />
+                                                    }
+                                                </td>
+                                                <td>@item.Livro?.Genero?.NomeGenero</td>
+                                                <td>@item.PrecoUnitario.ToString("C") x @item.Quantidade</td>
+                                                <td>@(item.PrecoUnitario* item.Quantidade).ToString("C")</td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <h5 class="text-danger">Sem Pedidos</h5>
+    }
+</div>

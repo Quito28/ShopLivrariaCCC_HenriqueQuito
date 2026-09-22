@@ -1,0 +1,60 @@
+﻿@model IEnumerable<Pedido>
+@{
+    ViewData["Title"] = "Todos Pedidos";
+    Layout = "AdminLayout";
+}
+
+<div style="width:100%" class="mt-2">
+    <h4>Pedidos</h4>
+    @if (Model != null && Model.Any())
+    {
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Data Pedido</th>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Celular</th>
+                    <th>Endereço</th>
+                    <th>Status Pagamento</th>
+                    <th>Status Pedido</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var pedido in Model)
+                {
+                    <tr>
+                        <td>@pedido.DataCriacao.ToString("dd-MM-yyyy")</td>
+                        <td>@pedido.Nome</td>
+                        <td>@pedido.Email</td>
+                        <td>@pedido.Celular</td>
+                        <td>@pedido.Endereco</td>
+                        <td>@pedido.MetodoPagamento | @(pedido.Pago ? "Pago" : "Não Pago")</td>
+                        <td>@pedido.StatusPedido.NomeStatus</td>
+                        <td>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#modal-@pedido.Id" class="btn btn-primary">
+                                Detalhes Pedido
+                            </button>
+                            <a asp-action="AlterarStatusPedido" asp-route-pedidoid="@pedido.Id" class="btn btn-info">
+                                Alterar Status Pedido
+                            </a>
+                            <a asp-action="AlterarStatusPagamento" asp-route-pedidoid="@pedido.Id" class="btn btn-info">
+                                Alterar Status Pagamento
+                            </a>
+                            @await Html.PartialAsync("/Views/AdminOperacoes/_PedidoDetalheModal.cshtml", new ShopLivrariaCCC.Models.DTOs.DetalhePedidoModalDTO
+                            {
+                                DivId = pedido.Id.ToString(),
+                                        DetalhesPedidos = pedido.DetalhesPedido
+                                        })
+                </td>
+            </tr>
+                        }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <h5>Sem Pedidos</h5>
+    }
+</div>

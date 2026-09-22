@@ -1,0 +1,71 @@
+﻿@model Carrinho
+@{
+    ViewData["Title"] = "Carrinho - Usuário";
+}
+
+<div style="width:90%; margin:auto" class="mt-2">
+    @if (Model != null && Model.DetalhesCarrinho != null && Model.DetalhesCarrinho.Count > 0)
+    {
+        <h5>Meu Carrinho</h5>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Livro</th>
+                    <th>Imagem</th>
+                    <th>Gênero</th>
+                    <th>Preço Unitário (INR)</th>
+                    <th>Total a pagar</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.DetalhesCarrinho)
+                {
+                    <tr>
+                        <td>@item.Livro.NomeLivro</td>
+                        <td>
+                            @if (string.IsNullOrEmpty(item.Livro.Imagem))
+                            {
+                                <img src="/imagens/NoImage.png" style="width:80px; height:100px" />
+                            }
+                            else
+                            {
+                                <img src="/imagens/@item.Livro.Imagem" style="width:80px; height:100px" />
+                            }
+                        </td>
+                        <td>@item.Livro.Genero.NomeGenero</td>
+                        <td>@item.Livro.Preco X @item.Quantidade</td>
+                        <td>@(item.Livro.Preco* item.Quantidade)</td>
+                        <td>
+                            @* O botão Aumentar Quantidade fica invisível se não houver estoque suficiente *@
+                            @if (item.Quantidade < item.Livro.Estoque.Quantidade)
+                            {
+                                <a class="btn btn-info" href="/Carrinho/AddItem?livroId=@item.LivroId&redirecionar=1">+</a>
+                            }
+                            else
+                            {
+                                <span style="border: 1px solid; padding: 8px 8px; color: red; border-radius: 5px; margin-right: 4px">
+                                    Sem estoque
+                                </span>
+                            }
+                            @* Diminuir Quantidade *@
+                            <a class="btn btn-info" href="/Carrinho/RemoveItem?livroId=@item.LivroId">-</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <div class="my-2">
+            <h5>Total(INR):</h5>
+            @(Model.DetalhesCarrinho.Select(item => item.Livro.Preco * item.Quantidade).Sum())
+        </div>
+        <div class="my-2">
+            <a class="btn btn-primary" href="/Carrinho/Checkout">Checkout</a>
+        </div>
+    }
+    else
+    {
+        <h5>Carrinho vazio</h5>
+    }
+</div>

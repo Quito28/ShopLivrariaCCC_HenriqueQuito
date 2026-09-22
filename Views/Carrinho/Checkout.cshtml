@@ -1,0 +1,48 @@
+﻿@model ShopLivrariaCCC_HenriqueQuito.Models.DTOs.ModeloCheckout
+@{
+    ViewData["Title"] = "Checkout";
+}
+
+<h2>Checkout</h2>
+
+<form asp-action="Checkout">
+    <div class="py-2">
+        <label asp-for="Nome">Nome*</label>
+        <input type="text" class="form-control" asp-for="Nome" />
+        <span asp-validation-for="Nome" class="text-danger"></span>
+    </div>
+
+    <div class="py-2">
+        <label asp-for="Email">Email*</label>
+        <input type="text" class="form-control" asp-for="Email" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+
+    <div class="py-2">
+        <label asp-for="Celular">Celular*</label>
+        <input type="text" class="form-control" asp-for="Celular" />
+        <span asp-validation-for="Celular" class="text-danger"></span>
+    </div>
+
+    <div class="py-2">
+        <label asp-for="Endereco">Endereço*</label>
+        <textarea class="form-control" asp-for="Endereco" rows="5"></textarea>
+        <span asp-validation-for="Endereco" class="text-danger"></span>
+    </div>
+
+    <div class="py-2">
+        <span class="mr-2">COD*</span>
+        <select asp-for="MetodoPagamento" class="form-control">
+            <option value="">Selecione a forma de pagamento</option>
+            @foreach (var method in Enum.GetValues(typeof(ShopLivrariaCCC_HenriqueQuito.Constants.FormaPagamento)))
+            {
+                <option value="@method.ToString()">@method.ToString()</option>
+            }
+        </select>
+        <span asp-validation-for="MetodoPagamento" class="text-danger"></span>
+    </div>
+
+    <div class="py-2">
+        <button type="submit" class="btn btn-info">Próximo</button>
+    </div>
+</form>

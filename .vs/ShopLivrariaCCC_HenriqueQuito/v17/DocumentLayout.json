@@ -1,0 +1,207 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\User\\Documents\\quitohenrique\\ShopLivrariaCCC_HenriqueQuito\\ShopLivrariaCCC_HenriqueQuito\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D59B1CD4-6592-9970-EAE8-E3A62525E5BB}|ShopLivrariaCCC_HenriqueQuito.csproj|d:\\user\\documents\\quitohenrique\\shoplivrariaccc_henriquequito\\shoplivrariaccc_henriquequito\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D59B1CD4-6592-9970-EAE8-E3A62525E5BB}|ShopLivrariaCCC_HenriqueQuito.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D59B1CD4-6592-9970-EAE8-E3A62525E5BB}|ShopLivrariaCCC_HenriqueQuito.csproj|d:\\user\\documents\\quitohenrique\\shoplivrariaccc_henriquequito\\shoplivrariaccc_henriquequito\\areas\\identity\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D59B1CD4-6592-9970-EAE8-E3A62525E5BB}|ShopLivrariaCCC_HenriqueQuito.csproj|solutionrelative:areas\\identity\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D59B1CD4-6592-9970-EAE8-E3A62525E5BB}|ShopLivrariaCCC_HenriqueQuito.csproj|d:\\user\\documents\\quitohenrique\\shoplivrariaccc_henriquequito\\shoplivrariaccc_henriquequito\\repositories\\homerepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D59B1CD4-6592-9970-EAE8-E3A62525E5BB}|ShopLivrariaCCC_HenriqueQuito.csproj|solutionrelative:repositories\\homerepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D59B1CD4-6592-9970-EAE8-E3A62525E5BB}|ShopLivrariaCCC_HenriqueQuito.csproj|d:\\user\\documents\\quitohenrique\\shoplivrariaccc_henriquequito\\shoplivrariaccc_henriquequito\\models\\carrinho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D59B1CD4-6592-9970-EAE8-E3A62525E5BB}|ShopLivrariaCCC_HenriqueQuito.csproj|solutionrelative:models\\carrinho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D59B1CD4-6592-9970-EAE8-E3A62525E5BB}|ShopLivrariaCCC_HenriqueQuito.csproj|d:\\user\\documents\\quitohenrique\\shoplivrariaccc_henriquequito\\shoplivrariaccc_henriquequito\\repositories\\estoquerepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D59B1CD4-6592-9970-EAE8-E3A62525E5BB}|ShopLivrariaCCC_HenriqueQuito.csproj|solutionrelative:repositories\\estoquerepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D59B1CD4-6592-9970-EAE8-E3A62525E5BB}|ShopLivrariaCCC_HenriqueQuito.csproj|d:\\user\\documents\\quitohenrique\\shoplivrariaccc_henriquequito\\shoplivrariaccc_henriquequito\\models\\livro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D59B1CD4-6592-9970-EAE8-E3A62525E5BB}|ShopLivrariaCCC_HenriqueQuito.csproj|solutionrelative:models\\livro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D59B1CD4-6592-9970-EAE8-E3A62525E5BB}|ShopLivrariaCCC_HenriqueQuito.csproj|d:\\user\\documents\\quitohenrique\\shoplivrariaccc_henriquequito\\shoplivrariaccc_henriquequito\\repositories\\userpedidorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D59B1CD4-6592-9970-EAE8-E3A62525E5BB}|ShopLivrariaCCC_HenriqueQuito.csproj|solutionrelative:repositories\\userpedidorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D59B1CD4-6592-9970-EAE8-E3A62525E5BB}|ShopLivrariaCCC_HenriqueQuito.csproj|d:\\user\\documents\\quitohenrique\\shoplivrariaccc_henriquequito\\shoplivrariaccc_henriquequito\\repositories\\generorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D59B1CD4-6592-9970-EAE8-E3A62525E5BB}|ShopLivrariaCCC_HenriqueQuito.csproj|solutionrelative:repositories\\generorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D59B1CD4-6592-9970-EAE8-E3A62525E5BB}|ShopLivrariaCCC_HenriqueQuito.csproj|d:\\user\\documents\\quitohenrique\\shoplivrariaccc_henriquequito\\shoplivrariaccc_henriquequito\\repositories\\carrinhorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D59B1CD4-6592-9970-EAE8-E3A62525E5BB}|ShopLivrariaCCC_HenriqueQuito.csproj|solutionrelative:repositories\\carrinhorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D59B1CD4-6592-9970-EAE8-E3A62525E5BB}|ShopLivrariaCCC_HenriqueQuito.csproj|d:\\user\\documents\\quitohenrique\\shoplivrariaccc_henriquequito\\shoplivrariaccc_henriquequito\\views\\carrinho\\getusercar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D59B1CD4-6592-9970-EAE8-E3A62525E5BB}|ShopLivrariaCCC_HenriqueQuito.csproj|solutionrelative:views\\carrinho\\getusercar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D59B1CD4-6592-9970-EAE8-E3A62525E5BB}|ShopLivrariaCCC_HenriqueQuito.csproj|d:\\user\\documents\\quitohenrique\\shoplivrariaccc_henriquequito\\shoplivrariaccc_henriquequito\\controllers\\carrinhocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D59B1CD4-6592-9970-EAE8-E3A62525E5BB}|ShopLivrariaCCC_HenriqueQuito.csproj|solutionrelative:controllers\\carrinhocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "D:\\User\\Documents\\quitohenrique\\ShopLivrariaCCC_HenriqueQuito\\ShopLivrariaCCC_HenriqueQuito\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\_ViewStart.cshtml",
+              "ToolTip": "D:\\User\\Documents\\quitohenrique\\ShopLivrariaCCC_HenriqueQuito\\ShopLivrariaCCC_HenriqueQuito\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-22T15:30:28.462Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeRepositorio.cs",
+              "DocumentMoniker": "D:\\User\\Documents\\quitohenrique\\ShopLivrariaCCC_HenriqueQuito\\ShopLivrariaCCC_HenriqueQuito\\Repositories\\HomeRepositorio.cs",
+              "RelativeDocumentMoniker": "Repositories\\HomeRepositorio.cs",
+              "ToolTip": "D:\\User\\Documents\\quitohenrique\\ShopLivrariaCCC_HenriqueQuito\\ShopLivrariaCCC_HenriqueQuito\\Repositories\\HomeRepositorio.cs",
+              "RelativeToolTip": "Repositories\\HomeRepositorio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-22T15:11:36.048Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserPedidoRepositorio.cs",
+              "DocumentMoniker": "D:\\User\\Documents\\quitohenrique\\ShopLivrariaCCC_HenriqueQuito\\ShopLivrariaCCC_HenriqueQuito\\Repositories\\UserPedidoRepositorio.cs",
+              "RelativeDocumentMoniker": "Repositories\\UserPedidoRepositorio.cs",
+              "ToolTip": "D:\\User\\Documents\\quitohenrique\\ShopLivrariaCCC_HenriqueQuito\\ShopLivrariaCCC_HenriqueQuito\\Repositories\\UserPedidoRepositorio.cs",
+              "RelativeToolTip": "Repositories\\UserPedidoRepositorio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-22T15:11:07.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EstoqueRepositorio.cs",
+              "DocumentMoniker": "D:\\User\\Documents\\quitohenrique\\ShopLivrariaCCC_HenriqueQuito\\ShopLivrariaCCC_HenriqueQuito\\Repositories\\EstoqueRepositorio.cs",
+              "RelativeDocumentMoniker": "Repositories\\EstoqueRepositorio.cs",
+              "ToolTip": "D:\\User\\Documents\\quitohenrique\\ShopLivrariaCCC_HenriqueQuito\\ShopLivrariaCCC_HenriqueQuito\\Repositories\\EstoqueRepositorio.cs",
+              "RelativeToolTip": "Repositories\\EstoqueRepositorio.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAIAwwBcAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-22T15:10:20.765Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\User\\Documents\\quitohenrique\\ShopLivrariaCCC_HenriqueQuito\\ShopLivrariaCCC_HenriqueQuito\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\User\\Documents\\quitohenrique\\ShopLivrariaCCC_HenriqueQuito\\ShopLivrariaCCC_HenriqueQuito\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-22T14:49:48.589Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GeneroRepositorio.cs",
+              "DocumentMoniker": "D:\\User\\Documents\\quitohenrique\\ShopLivrariaCCC_HenriqueQuito\\ShopLivrariaCCC_HenriqueQuito\\Repositories\\GeneroRepositorio.cs",
+              "RelativeDocumentMoniker": "Repositories\\GeneroRepositorio.cs",
+              "ToolTip": "D:\\User\\Documents\\quitohenrique\\ShopLivrariaCCC_HenriqueQuito\\ShopLivrariaCCC_HenriqueQuito\\Repositories\\GeneroRepositorio.cs",
+              "RelativeToolTip": "Repositories\\GeneroRepositorio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-22T15:11:56.39Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GetUserCar.cshtml",
+              "DocumentMoniker": "D:\\User\\Documents\\quitohenrique\\ShopLivrariaCCC_HenriqueQuito\\ShopLivrariaCCC_HenriqueQuito\\Views\\Carrinho\\GetUserCar.cshtml",
+              "RelativeDocumentMoniker": "Views\\Carrinho\\GetUserCar.cshtml",
+              "ToolTip": "D:\\User\\Documents\\quitohenrique\\ShopLivrariaCCC_HenriqueQuito\\ShopLivrariaCCC_HenriqueQuito\\Views\\Carrinho\\GetUserCar.cshtml",
+              "RelativeToolTip": "Views\\Carrinho\\GetUserCar.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACgAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-22T15:08:15.614Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CarrinhoController.cs",
+              "DocumentMoniker": "D:\\User\\Documents\\quitohenrique\\ShopLivrariaCCC_HenriqueQuito\\ShopLivrariaCCC_HenriqueQuito\\Controllers\\CarrinhoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CarrinhoController.cs",
+              "ToolTip": "D:\\User\\Documents\\quitohenrique\\ShopLivrariaCCC_HenriqueQuito\\ShopLivrariaCCC_HenriqueQuito\\Controllers\\CarrinhoController.cs",
+              "RelativeToolTip": "Controllers\\CarrinhoController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAowCMAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-22T15:07:46.957Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Livro.cs",
+              "DocumentMoniker": "D:\\User\\Documents\\quitohenrique\\ShopLivrariaCCC_HenriqueQuito\\ShopLivrariaCCC_HenriqueQuito\\Models\\Livro.cs",
+              "RelativeDocumentMoniker": "Models\\Livro.cs",
+              "ToolTip": "D:\\User\\Documents\\quitohenrique\\ShopLivrariaCCC_HenriqueQuito\\ShopLivrariaCCC_HenriqueQuito\\Models\\Livro.cs",
+              "RelativeToolTip": "Models\\Livro.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-22T14:56:00.419Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Carrinho.cs",
+              "DocumentMoniker": "D:\\User\\Documents\\quitohenrique\\ShopLivrariaCCC_HenriqueQuito\\ShopLivrariaCCC_HenriqueQuito\\Models\\Carrinho.cs",
+              "RelativeDocumentMoniker": "Models\\Carrinho.cs",
+              "ToolTip": "D:\\User\\Documents\\quitohenrique\\ShopLivrariaCCC_HenriqueQuito\\ShopLivrariaCCC_HenriqueQuito\\Models\\Carrinho.cs",
+              "RelativeToolTip": "Models\\Carrinho.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-22T14:53:41.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CarrinhoRepositorio.cs",
+              "DocumentMoniker": "D:\\User\\Documents\\quitohenrique\\ShopLivrariaCCC_HenriqueQuito\\ShopLivrariaCCC_HenriqueQuito\\Repositories\\CarrinhoRepositorio.cs",
+              "RelativeDocumentMoniker": "Repositories\\CarrinhoRepositorio.cs",
+              "ToolTip": "D:\\User\\Documents\\quitohenrique\\ShopLivrariaCCC_HenriqueQuito\\ShopLivrariaCCC_HenriqueQuito\\Repositories\\CarrinhoRepositorio.cs",
+              "RelativeToolTip": "Repositories\\CarrinhoRepositorio.cs",
+              "ViewState": "AgIAAKkAAAAAAAAAAAAcwLAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-22T14:50:18.222Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

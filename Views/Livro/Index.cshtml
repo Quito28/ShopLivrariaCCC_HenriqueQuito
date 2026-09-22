@@ -1,0 +1,75 @@
+﻿@model IEnumerable<ShopLivrariaCCC_HenriqueQuito.Models.Livro>
+
+@{
+    ViewData["Title"] = "Lista de Livros";
+    Layout = "AdminLayout";
+}
+
+<h1>Lista de Livros</h1>
+
+<p>
+    <a asp-action="AddLivro">Novo Livro</a>
+</p>
+
+@if (Model != null && Model.Any())
+{
+    <table class="table table-striped my-2">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Imagem)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.NomeLivro)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.AutorNome)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Preco)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Genero)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @if (string.IsNullOrWhiteSpace(item.Imagem))
+                        {
+                            <img src="/imagens/NoImage.png" style="width:80px; height:100px" alt="Imagem Livro" />
+                        }
+                        else
+                        {
+                            <img src="/imagens/@item.Imagem" style="width:100px; height:120px" alt="Book Image" />
+                        }
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.NomeLivro)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.AutorNome)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Preco)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Genero.NomeGenero)
+                    </td>
+                    <td>
+                        <a asp-action="UpdateLivro" asp-route-id="@item.Id" class="btn btn-success">Editar</a> |
+                        <a asp-action="DeleteLivro" asp-controller="Livro" asp-route-id="@item.Id" class="btn btn-danger" onclick="return window.confirm('Tem certeza que deseja deletar?')">Deletar</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <h3 class="text-danger">Sem registros</h3>
+}

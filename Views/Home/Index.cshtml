@@ -1,0 +1,90 @@
+﻿@using ShopLivrariaCCC_HenriqueQuito.Models.DTOs
+@model ShopLivrariaCCC_HenriqueQuito.Models.DTOs.LivroDisplayModel
+@{
+}
+
+<div class="my-2">
+    <form asp-action="Index" class="row row-cols-lg-auto g-3 align-items-center">
+        <div class="col-12">
+            <label class="visually-hidden" for="GeneId">Gêneros</label>
+            <select class="form-select" id="GeneId" name="GeneId">
+                <option selected>Gênero</option>
+                @foreach (var genre in Model.Generos)
+                {
+                    <option selected="@(genre.Id == Model.GeneId)" value="@genre.Id">@genre.NomeGenero</option>
+                }
+            </select>
+        </div>
+        <div class="col-12">
+            <label class="visually-hidden" for="sterm">Pesquisar por Titulo</label>
+            <div class="input-group">
+                <div class="input-group-text"></div>
+                <input type="text" class="form-control" value="@Model.STerm" id="sterm" name="sterm" placeholder="Pesquisar por Titulo">
+            </div>
+        </div>
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary">Pesquisar</button>
+            <a href="/Home/Index" class="btn btn-dark">Limpar</a>
+        </div>
+    </form>
+</div>
+
+<div class="w-100 mt-4 d-flex flex-wrap">
+    @foreach (var livro in Model.Livro)
+    {
+        <div class="card mx-3 mb-4" style="width: 11rem;">
+            @if (string.IsNullOrEmpty(livro.Imagem))
+            {
+                <img style="width:100%;height:180px" src="/imagens/NoImage.png" class="card-img-top" alt="...">
+            }
+            else
+            {
+                <img style="width: 100%; height:180px" src="/imagens/@livro.Imagem" class="card-img-top" alt="...">
+            }
+            <div class="card-body">
+                <h5 class="card-title">@livro.NomeLivro</h5>
+                <p class="card-text">
+                    <b>Gênero: </b>@livro.NomeGenero <br />
+                    <b>Autor: </b>@livro.AutorNome <br />
+                    <b>Preço: </b>@livro.Preco
+                </p>
+                @if (livro.Quantidade > 0)
+                {
+                    <button type="button" onclick="add(@livro.Id)" class="btn btn-primary">
+                        <i class="bi bi-cart-plus-fill"></i>
+                    </button>
+                }
+                else
+                {
+                    <span style="border: 1px solid; padding: 5px 8px; color: red; border-radius: 5px;">Sem Estoque</span>
+                }
+            </div>
+        </div>
+    }
+</div>
+
+@section Scripts {
+    <script>
+        async function add(livroId) {
+            var usernameEl = document.getElementById("username");
+            if (usernameEl == null) {
+                window.location.href = "/Identity/Account/Login";
+                return;
+            }
+            try {
+                var response = await fetch(`/Carrinho/AddItem?livroId=${livroId}`);
+                if (response.status == 200) {
+                    var result = await response.json();
+                    var carQuantEl = document.getElementById("carQuant");
+                    if (carQuantEl) {
+                        carQuantEl.innerHTML = result;
+                    }
+                    window.location.href = "#carQuant";
+                }
+            }
+            catch (err) {
+                console.log(err);
+            }
+        }
+    </script>
+}

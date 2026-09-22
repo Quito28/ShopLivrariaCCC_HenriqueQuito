@@ -1,0 +1,49 @@
+﻿@model ShopLivrariaCCC_HenriqueQuito.Models.DTOs.TopLivrosVm
+@{
+ViewData["Title"] = "TopLivros Vendidos";
+Layout = "AdminLayout";
+}
+<h3>Livros mais vendidos.</h3>
+@if (Model != null)
+{
+<div>
+<form class="my-2 d-flex" style="gap: 5px" asp-action="TopLivros Vendidos"
+method="get">
+<input type="date" style="width: 200px;" class="form-control"
+name="iData" />
+<input type="date" style="width: 200px;" class="form-control"
+name="fData" />
+<button class="btn btn-primary">Filtro</button>
+<a class="btn btn-primary" href="/Relatorio/TopLivros Vendidos">Limpar</a>
+</form>
+<h4>Mostrar resultado de @Model.DataInicio.ToString("dd-MMM-yyyy") Até @Model.DataFinal.ToString("dd-MMM-yyyy")</h4>
+@if (Model.TopLivros.Count() == 0)
+{
+<div class="my-3" style="font-size:16px; font-weight:bold">
+Sem Registros para essa data
+</div>
+}
+else
+{
+<table style="width: 50%;" class="table table-striped">
+<thead>
+<th>Livro</th>
+<th>Unidades Vendidas</th>
+</thead>
+<tbody>
+@foreach (var item in Model. TopLivros)
+{
+<tr>
+<td>@item.NomeLivro by @item. AutorNome</td>
+                            <td>@item.TotalUniSoma</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+    </div>
+}
+else
+{
+    <h4 class="text-danger">Algo deu errado!</h4>
+}
