@@ -6,7 +6,7 @@ using ShopLivrariaCCC_HenriqueQuito.Shared;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// String de conex„o corrigida (sem quebras de linha)
+// String de conex√£o corrigida (sem quebras de linha)
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection")
     ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
 
@@ -23,7 +23,7 @@ builder.Services
 
 builder.Services.AddControllersWithViews();
 
-// Adicionados os sinais '<' que faltavam nos repositÛrios
+// Adicionados os sinais '<' que faltavam nos reposit√≥rios
 builder.Services.AddTransient<IHomeRepositorio, HomeRepositorio>();
 builder.Services.AddTransient<ICarrinhoRepositorio, CarrinhoRepositorio>();
 builder.Services.AddTransient<IUserPedidoRepositorio, UserPedidoRepositorio>();
@@ -48,9 +48,9 @@ else
 {
     app.UseExceptionHandler("/Home/Error");
     app.UseHsts();
+    app.UseHttpsRedirection();
 }
 
-app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
 app.UseAuthorization();
