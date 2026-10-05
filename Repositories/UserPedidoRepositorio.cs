@@ -1,6 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using ShopLivrariaCCC_HenriqueQuito.Data;
 using ShopLivrariaCCC_HenriqueQuito.Data;
 using ShopLivrariaCCC_HenriqueQuito.Models;
 using ShopLivrariaCCC_HenriqueQuito.Models.DTOs;
@@ -11,7 +10,6 @@ using System.Threading.Tasks;
 
 namespace ShopLivrariaCCC_HenriqueQuito.Repositories
 {
-    // Certifique-se de que a classe UserPedidoRepositorio implementa a interface IUserPedidoRepositorio
     public class UserPedidoRepositorio : IUserPedidoRepositorio
     {
         private readonly ApplicationDbContext _db;
@@ -27,7 +25,6 @@ namespace ShopLivrariaCCC_HenriqueQuito.Repositories
 
         public async Task AlterarStatusPagamento(int pedidoId)
         {
-            // CORRIGIDO: Faltava o sinal de '=' antes do await
             var pedido = await _db.Pedidos.FindAsync(pedidoId);
             if (pedido == null)
             {
@@ -37,10 +34,8 @@ namespace ShopLivrariaCCC_HenriqueQuito.Repositories
             await _db.SaveChangesAsync();
         }
 
-        // CORRIGIDO: Removido espaço do nome do método "AlterarStatus Pedido"
         public async Task AlterarStatusPedido(UpdateStatusPedidoModel dado)
         {
-            // CORRIGIDO: O código abaixo estava fora das chaves do método e faltava '=' em 'await_db'
             var pedido = await _db.Pedidos.FindAsync(dado.PedidoId);
 
             if (pedido == null)
@@ -56,7 +51,6 @@ namespace ShopLivrariaCCC_HenriqueQuito.Repositories
             return await _db.Pedidos.FindAsync(id);
         }
 
-        // CORRIGIDO: Removido espaço de "Status Pedido" no tipo de retorno e na tabela
         public async Task<IEnumerable<StatusPedido>> GetPedidosStatus()
         {
             return await _db.StatusPedido.ToListAsync();
@@ -64,7 +58,6 @@ namespace ShopLivrariaCCC_HenriqueQuito.Repositories
 
         public async Task<IEnumerable<Pedido>> UserPedidos(bool getAll = false)
         {
-            // CORRIGIDO: Removido espaço de "Detalhes Pedido"
             var pedidos = _db.Pedidos
                 .Include(x => x.StatusPedido)
                 .Include(x => x.DetalhesPedido)

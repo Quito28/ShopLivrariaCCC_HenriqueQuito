@@ -1,5 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-using ShopLivrariaCCC_HenriqueQuito.Data;
+using Microsoft.EntityFrameworkCore;
 using ShopLivrariaCCC_HenriqueQuito.Data;
 using ShopLivrariaCCC_HenriqueQuito.Models;
 using ShopLivrariaCCC_HenriqueQuito.Models.DTOs;
