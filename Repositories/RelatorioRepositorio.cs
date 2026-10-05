@@ -1,6 +1,5 @@
-﻿using Microsoft.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
-using ShopLivrariaCCC.Data;
 using ShopLivrariaCCC_HenriqueQuito.Data;
 using ShopLivrariaCCC_HenriqueQuito.Models.DTOs;
 using System.Data;
